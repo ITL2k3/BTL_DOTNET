@@ -120,5 +120,35 @@ namespace experiment_BTL_DOTNET
 
 
         }
+
+        private void khuyếnMãiToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            FrmKMQLY frm1 = new FrmKMQLY();
+            frm1.Show();
+        }
+
+        private void xeTrongKhoToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            FrmQlyXe frm1 = new FrmQlyXe();
+            frm1.Show();
+        }
+
+        private void thôngTinNhàCungCấpToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            FrmQlyNCC frm1 = new FrmQlyNCC();
+            frm1.Show();
+        }
+
+        private void phảnHồiKháchHàngToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            FrmQLYPHKH frm = new FrmQLYPHKH();
+            frm.Show();
+        }
+
+        private void qLyNhanVienToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            FrmTTNV frm = new FrmTTNV();
+            frm.Show();
+        }
     }
 }

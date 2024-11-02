@@ -17,6 +17,9 @@ namespace experiment_BTL_DOTNET
             Application.EnableVisualStyles();
             Application.SetCompatibleTextRenderingDefault(false);
             Application.Run(new Form1());
+            //Application.Run(new FrmQlyThongTinKH());
+            //Application.Run(new FrmQLYPHKH());
+            // Application.Run(new FrmTTNV());
         }
     }
 }

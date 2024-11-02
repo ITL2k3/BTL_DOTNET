@@ -88,7 +88,8 @@ namespace experiment_BTL_DOTNET
 
         private void qLThongTinKhachHangToolStripMenuItem_Click(object sender, EventArgs e)
         {
-
+            FrmQlyThongTinKH frm1 = new FrmQlyThongTinKH();
+            frm1.Show();
         }
 
         private void label1_Click(object sender, EventArgs e)
@@ -144,6 +145,49 @@ namespace experiment_BTL_DOTNET
         private void label5_Click(object sender, EventArgs e)
         {
 
+        }
+
+        private void menuStrip_ItemClicked(object sender, ToolStripItemClickedEventArgs e)
+        {
+
+        }
+
+        private void hóaĐơnBánHàngToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void MenuFormNhanVien_Load(object sender, EventArgs e)
+        {
+
+        }
+
+        private void sảnPhẩmToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void xeTrongKhoToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            FrmXe frm1 = new FrmXe();
+            frm1.Show();
+        }
+
+        private void khuyếnMãiToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            FrmKM frm1 = new FrmKM();
+            frm1.Show();
+        }
+
+        private void toolStripMenuItem1_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void phảnHồiKháchHàngToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            FrmPHKH frm = new FrmPHKH();
+            frm.Show();
         }
     }
 }
