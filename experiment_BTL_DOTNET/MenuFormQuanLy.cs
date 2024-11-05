@@ -150,5 +150,35 @@ namespace experiment_BTL_DOTNET
             FrmTTNV frm = new FrmTTNV();
             frm.Show();
         }
+
+        private void sảnPhẩmToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void button1_Click(object sender, EventArgs e)
+        {
+            FrmXacMinh frm = new FrmXacMinh(this.mnv);
+            frm.Show();
+        }
+
+        private void button1_Click_1(object sender, EventArgs e)
+        {
+            string sql_LayThongTinNhanVien = $"EXEC LayThongTin_NhanVien {this.mnv}";
+            DataTable dta = new DataTable();
+
+            dta = kn.Lay_Dulieu(sql_LayThongTinNhanVien);
+
+            txtMNV.Text = dta.Rows[0]["MaNhanVien"].ToString();
+            txtHoVaTen.Text = dta.Rows[0]["HoVaTen"].ToString();
+            txtEmail.Text = dta.Rows[0]["Email"].ToString();
+        }
+
+        private void hóaĐơnToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            FrmQlyHD frm = new FrmQlyHD();
+            frm.Show();
+        
+        }
     }
 }

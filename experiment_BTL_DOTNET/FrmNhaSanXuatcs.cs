@@ -32,6 +32,10 @@ namespace experiment_BTL_DOTNET
 
                 DataTable dta = new DataTable();
                 dta = kn.Lay_Dulieu($"SELECT * FROM NhaCungCap WHERE MaNhaCungCap = '{msnx}'");
+                if(dta.Rows.Count == 0)
+                {
+                    throw new Exception("Mã số nhà sản xuất không tồn tại!");
+                }
                 tBoxDC.Text = dta.Rows[0]["DiaChi"].ToString();
                 tBoxEmail.Text = dta.Rows[0]["Email"].ToString();
                 tBoxGT.Text = dta.Rows[0]["SanPhamCungCap"].ToString();
@@ -42,7 +46,8 @@ namespace experiment_BTL_DOTNET
             }
             catch (Exception err)
             {
-                MessageBox.Show("Đề nghị xem lại mã số nhà sản xuất!");
+                
+                MessageBox.Show(err.Message);
                 Close();
             }
         }

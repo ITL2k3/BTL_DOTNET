@@ -33,8 +33,14 @@
     <WarningLevel>4</WarningLevel>
   </PropertyGroup>
   <ItemGroup>
+    <Reference Include="CrystalDecisions.CrystalReports.Engine, Version=13.0.4000.0, Culture=neutral, PublicKeyToken=692fbea5521e1304, processorArchitecture=MSIL" />
+    <Reference Include="CrystalDecisions.ReportSource, Version=13.0.4000.0, Culture=neutral, PublicKeyToken=692fbea5521e1304, processorArchitecture=MSIL" />
+    <Reference Include="CrystalDecisions.Shared, Version=13.0.4000.0, Culture=neutral, PublicKeyToken=692fbea5521e1304, processorArchitecture=MSIL" />
+    <Reference Include="CrystalDecisions.Windows.Forms, Version=13.0.4000.0, Culture=neutral, PublicKeyToken=692fbea5521e1304, processorArchitecture=MSIL" />
     <Reference Include="System" />
     <Reference Include="System.Core" />
+    <Reference Include="System.Web" />
+    <Reference Include="System.Web.Services" />
     <Reference Include="System.Xml.Linq" />
     <Reference Include="System.Data.DataSetExtensions" />
     <Reference Include="Microsoft.CSharp" />
@@ -46,17 +52,41 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="BCTK.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>BCTK.rpt</DependentUpon>
+      <SubType>Component</SubType>
+    </Compile>
     <Compile Include="Form1.cs">
       <SubType>Form</SubType>
     </Compile>
     <Compile Include="Form1.Designer.cs">
       <DependentUpon>Form1.cs</DependentUpon>
     </Compile>
+    <Compile Include="FrmBCTK.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FrmBCTK.Designer.cs">
+      <DependentUpon>FrmBCTK.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FrmChiTietHoaDon.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FrmChiTietHoaDon.Designer.cs">
+      <DependentUpon>FrmChiTietHoaDon.cs</DependentUpon>
+    </Compile>
     <Compile Include="FrmDangNhapNV.cs">
       <SubType>Form</SubType>
     </Compile>
     <Compile Include="FrmDangNhapNV.Designer.cs">
       <DependentUpon>FrmDangNhapNV.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FrmDatHang.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FrmDatHang.Designer.cs">
+      <DependentUpon>FrmDatHang.cs</DependentUpon>
     </Compile>
     <Compile Include="FrmKM.cs">
       <SubType>Form</SubType>
@@ -82,6 +112,12 @@
     <Compile Include="FrmPHKH.Designer.cs">
       <DependentUpon>FrmPHKH.cs</DependentUpon>
     </Compile>
+    <Compile Include="FrmQlyHD.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FrmQlyHD.Designer.cs">
+      <DependentUpon>FrmQlyHD.cs</DependentUpon>
+    </Compile>
     <Compile Include="FrmQlyNCC.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -106,6 +142,12 @@
     <Compile Include="FrmQlyXe.Designer.cs">
       <DependentUpon>FrmQlyXe.cs</DependentUpon>
     </Compile>
+    <Compile Include="FrmSuaTTQLY.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FrmSuaTTQLY.Designer.cs">
+      <DependentUpon>FrmSuaTTQLY.cs</DependentUpon>
+    </Compile>
     <Compile Include="FrmTaiKhoanDuocCap.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -118,11 +160,23 @@
     <Compile Include="FrmThemNhanVien_TK.Designer.cs">
       <DependentUpon>FrmThemNhanVien_TK.cs</DependentUpon>
     </Compile>
+    <Compile Include="FrmTimHoaDon.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FrmTimHoaDon.Designer.cs">
+      <DependentUpon>FrmTimHoaDon.cs</DependentUpon>
+    </Compile>
     <Compile Include="FrmTimKiemKH.cs">
       <SubType>Form</SubType>
     </Compile>
     <Compile Include="FrmTimKiemKH.Designer.cs">
       <DependentUpon>FrmTimKiemKH.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FrmTinhTrangDonHang.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FrmTinhTrangDonHang.Designer.cs">
+      <DependentUpon>FrmTinhTrangDonHang.cs</DependentUpon>
     </Compile>
     <Compile Include="FrmTTNV.cs">
       <SubType>Form</SubType>
@@ -130,11 +184,35 @@
     <Compile Include="FrmTTNV.Designer.cs">
       <DependentUpon>FrmTTNV.cs</DependentUpon>
     </Compile>
+    <Compile Include="FrmXacMinh.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FrmXacMinh.Designer.cs">
+      <DependentUpon>FrmXacMinh.cs</DependentUpon>
+    </Compile>
     <Compile Include="FrmXe.cs">
       <SubType>Form</SubType>
     </Compile>
     <Compile Include="FrmXe.Designer.cs">
       <DependentUpon>FrmXe.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FrmXemDonHang.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FrmXemDonHang.Designer.cs">
+      <DependentUpon>FrmXemDonHang.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FrmXemHoaDon.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FrmXemHoaDon.Designer.cs">
+      <DependentUpon>FrmXemHoaDon.cs</DependentUpon>
+    </Compile>
+    <Compile Include="HoaDon.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>HoaDon.rpt</DependentUpon>
+      <SubType>Component</SubType>
     </Compile>
     <Compile Include="KetNoiCSDL.cs" />
     <Compile Include="MenuFormNhanVien.cs">
@@ -157,11 +235,24 @@
     <Compile Include="UserControl1.Designer.cs">
       <DependentUpon>UserControl1.cs</DependentUpon>
     </Compile>
+    <EmbeddedResource Include="BCTK.rpt">
+      <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>
+      <LastGenOutput>BCTK.cs</LastGenOutput>
+    </EmbeddedResource>
     <EmbeddedResource Include="Form1.resx">
       <DependentUpon>Form1.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="FrmBCTK.resx">
+      <DependentUpon>FrmBCTK.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FrmChiTietHoaDon.resx">
+      <DependentUpon>FrmChiTietHoaDon.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="FrmDangNhapNV.resx">
       <DependentUpon>FrmDangNhapNV.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FrmDatHang.resx">
+      <DependentUpon>FrmDatHang.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="FrmKM.resx">
       <DependentUpon>FrmKM.cs</DependentUpon>
@@ -175,6 +266,9 @@
     <EmbeddedResource Include="FrmPHKH.resx">
       <DependentUpon>FrmPHKH.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="FrmQlyHD.resx">
+      <DependentUpon>FrmQlyHD.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="FrmQlyNCC.resx">
       <DependentUpon>FrmQlyNCC.cs</DependentUpon>
     </EmbeddedResource>
@@ -187,20 +281,42 @@
     <EmbeddedResource Include="FrmQlyXe.resx">
       <DependentUpon>FrmQlyXe.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="FrmSuaTTQLY.resx">
+      <DependentUpon>FrmSuaTTQLY.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="FrmTaiKhoanDuocCap.resx">
       <DependentUpon>FrmTaiKhoanDuocCap.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="FrmThemNhanVien_TK.resx">
       <DependentUpon>FrmThemNhanVien_TK.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="FrmTimHoaDon.resx">
+      <DependentUpon>FrmTimHoaDon.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="FrmTimKiemKH.resx">
       <DependentUpon>FrmTimKiemKH.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FrmTinhTrangDonHang.resx">
+      <DependentUpon>FrmTinhTrangDonHang.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="FrmTTNV.resx">
       <DependentUpon>FrmTTNV.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="FrmXacMinh.resx">
+      <DependentUpon>FrmXacMinh.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="FrmXe.resx">
       <DependentUpon>FrmXe.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FrmXemDonHang.resx">
+      <DependentUpon>FrmXemDonHang.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FrmXemHoaDon.resx">
+      <DependentUpon>FrmXemHoaDon.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="HoaDon.rpt">
+      <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>
+      <LastGenOutput>HoaDon.cs</LastGenOutput>
     </EmbeddedResource>
     <EmbeddedResource Include="MenuFormNhanVien.resx">
       <DependentUpon>MenuFormNhanVien.cs</DependentUpon>
@@ -232,6 +348,9 @@
   </ItemGroup>
   <ItemGroup>
     <None Include="App.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <Service Include="{C0C07587-41A7-46C8-8FBD-3F9C8EBE2DDC}" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

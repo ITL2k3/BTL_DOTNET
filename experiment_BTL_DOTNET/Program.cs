@@ -19,7 +19,11 @@ namespace experiment_BTL_DOTNET
             Application.Run(new Form1());
             //Application.Run(new FrmQlyThongTinKH());
             //Application.Run(new FrmQLYPHKH());
-            // Application.Run(new FrmTTNV());
+            //Application.Run(new FrmDatHang());
+            //Application.Run(new FrmXemHoaDon("6"));
+            //Application.Run(new FrmBCTK());
+            //Application.Run(new FrmQlyHD());
+
         }
     }
 }

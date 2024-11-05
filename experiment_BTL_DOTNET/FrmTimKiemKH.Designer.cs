@@ -121,6 +121,7 @@ namespace experiment_BTL_DOTNET
             this.optNhapMKH.TabStop = true;
             this.optNhapMKH.Text = "Nhập mã khách hàng";
             this.optNhapMKH.UseVisualStyleBackColor = true;
+            this.optNhapMKH.CheckedChanged += new System.EventHandler(this.optNhapMKH_CheckedChanged);
             // 
             // label2
             // 

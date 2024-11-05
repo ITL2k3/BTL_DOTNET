@@ -66,5 +66,10 @@ namespace experiment_BTL_DOTNET
             
 
         }
+
+        private void optNhapMKH_CheckedChanged(object sender, EventArgs e)
+        {
+
+        }
     }
 }
